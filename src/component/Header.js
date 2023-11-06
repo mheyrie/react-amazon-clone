@@ -26,8 +26,8 @@ function Header() {
                 <span className="nav_itemSecond">Shop</span>
             </div>
             <div className="nav_item">
-                <LocalGroceryStoreIcon /> 
-                <span className="nav_itemSecond">0</span>
+                <LocalGroceryStoreIcon className="itemBasket" /> 
+                <span className="nav_itemSecond nav__basketCount" >0</span>
             </div>
       </div>
     </div>
