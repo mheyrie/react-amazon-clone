@@ -2,7 +2,7 @@ import React from 'react'
 import LocalGroceryStoreIcon from '@mui/icons-material/LocalGroceryStore';
 import StorefrontIcon from '@mui/icons-material/Storefront';
 import SearchIcon from '@mui/icons-material/Search';
-import "../Header.css";
+
 
 function Header() {
   return (
@@ -25,7 +25,7 @@ function Header() {
                 <span className="nav_itemFirst">Your</span>
                 <span className="nav_itemSecond">Shop</span>
             </div>
-            <div className="nav_item">
+            <div className="nav_itemBasket">
                 <LocalGroceryStoreIcon className="itemBasket" /> 
                 <span className="nav_itemSecond nav__basketCount" >0</span>
             </div>
