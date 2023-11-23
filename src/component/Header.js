@@ -27,7 +27,7 @@ function Header() {
             </div>
             <div className="nav_itemBasket">
                 <LocalGroceryStoreIcon className="itemBasket" /> 
-                <span className="nav_itemSecond nav__basketCount" >0</span>
+                <span className="nav_itemSecond nav_basketCount" >0</span>
             </div>
       </div>
     </div>
