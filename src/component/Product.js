@@ -7,8 +7,8 @@ function Product() {
             <div className="product_info">
                 <p className="title">Brown Big Teddy for Adult and childern with a bow around it's neck</p>
                 <p className="product_price">
-                    <small></small>
-                    <strong>$400</strong> 
+                    <small>$</small>
+                    <strong>400</strong> 
                 </p>
                 <div className="product_rating">⭐⭐⭐⭐⭐</div>
             </div>
