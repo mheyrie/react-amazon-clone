@@ -1,4 +1,5 @@
 import React from 'react'
+import "../styles/Header.css"
 import LocalGroceryStoreIcon from '@mui/icons-material/LocalGroceryStore';
 import StorefrontIcon from '@mui/icons-material/Storefront';
 import SearchIcon from '@mui/icons-material/Search';
