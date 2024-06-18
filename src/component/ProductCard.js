@@ -1,6 +1,6 @@
-import React from 'react';
-import productsData from '../data/products.json';
-import '../styles/Product.css';
+import React from "react";
+import productsData from "../data/products.json";
+import "../styles/Product.css";
 
 function ProductCard() {
   return (
@@ -11,7 +11,7 @@ function ProductCard() {
             <p className="title">{title}</p>
             <p className="product_price">
               <small>$</small>
-              <strong>{price}</strong>
+              <strong>{Number(price).toFixed(2)}</strong>
             </p>
             <div className="product_rating">
               {Array(Number(rating))
@@ -22,12 +22,13 @@ function ProductCard() {
             </div>
           </div>
           <div className="product_img_container">
-             <img className="product_img" src={image} alt={`${title} product`} />
+
           </div>
-         <div>
+            <img className="product_img" src={image} alt={`${title} product`} />
+         
+          <div className="add_to_basket_btn_container">
             <button className="add_to_basket_btn">Add to Basket</button>
-         </div>
-          
+          </div>
         </div>
       ))}
     </div>

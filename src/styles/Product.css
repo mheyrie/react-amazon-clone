@@ -1,59 +1,69 @@
+/* Product.css */
+
 .products {
-   display: grid;
-   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-   grid-gap: 16px;
-   justify-items: center;
-   padding: 16px;
-   
- }
- 
- .product {
-   border: 1px solid #ddd;
-   border-radius: 4px;
-   padding: 16px;
-   text-align: center;
-   background-color: #fff;
-   width: 100%;
-   max-width: 300px;
-   
- }
- 
- .product_info {
-   margin-bottom: 16px;
- }
- 
- .title {
-   font-size: 16px;
-   font-weight: bold;
- }
- 
- .product_price {
-   font-size: 14px;
-   color: #b12704;
- }
- 
- .product_rating {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+.product {
+  width: 300px;
+  height: 450px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.product_info {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  font-weight: 600;
+}
+
+.product_rating{
    display: flex;
-   justify-content: center;
- }
- 
- .product_img {
-   max-width: 100%;
-   max-height: 350px;
-   width: 200px;
-   margin-bottom: 16px;
- }
- 
- .add_to_basket_btn {
-   background-color: #f0c14b;
-   border: 1px solid;
-   border-color: #a88734 #9c7e31 #846a29;
-   color: #111;
-   padding: 8px;
-   cursor: pointer;
- }
- 
- .add_to_basket_btn:hover {
-   background-color: #ddb347;
- }
- 
+}
+
+.product_img_container {
+  /* flex: 1; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+
+.product_img {
+  height: 200px;
+  width: auto;
+  object-fit: contain;
+}
+
+.add_to_basket_btn_container {
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+  text-align: center;
+  padding: 10px;
+}
+
+.add_to_basket_btn {
+  background-color: #f0c14b;
+  border: 1px solid;
+  border-color: #a88734 #9c7e31 #846a29;
+  color: #111;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  padding: 10px;
+  width: 50%;
+  margin: 0 auto;
+}
+
+.add_to_basket_btn:hover {
+  background-color: #ddb347;
+}
