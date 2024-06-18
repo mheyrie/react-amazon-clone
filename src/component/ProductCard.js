@@ -22,10 +22,9 @@ function ProductCard() {
             </div>
           </div>
           <div className="product_img_container">
-
-          </div>
             <img className="product_img" src={image} alt={`${title} product`} />
-         
+          </div>
+
           <div className="add_to_basket_btn_container">
             <button className="add_to_basket_btn">Add to Basket</button>
           </div>
