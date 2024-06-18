@@ -27,11 +27,10 @@
     display: flex;
     flex: 1;
     align-items: center;
- 
     margin: 0 10px;
  }
  .header_searchInput{
-   height: 12px !important;
+   height: 14px !important;
    padding: 10px;
    border: none;
    width: 100%;
