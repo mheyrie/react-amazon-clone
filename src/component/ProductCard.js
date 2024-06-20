@@ -4,7 +4,7 @@ import "../styles/Product.css";
 
 function ProductCard() {
   return (
-    <div className="products">
+    <div className="checkout_products">
       {productsData.products.map(({ id, title, price, rating, image }) => (
         <div className="product" key={id}>
           <div className="product_info">
