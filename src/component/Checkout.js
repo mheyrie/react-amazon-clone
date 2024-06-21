@@ -1,7 +1,8 @@
 import React from 'react'
 import '../styles/Checkout.css'
-import ad from '../image/ad.png'
+import ad from '../image/ad.webp'
 import CheckoutProduct from "./CheckoutProduct"
+import Subtotal from "./Subtotal"
 
 function Checkout() {
   return (
@@ -12,9 +13,10 @@ function Checkout() {
                 Your Shopping Basket
             </h2>
             <CheckoutProduct/>
+            <CheckoutProduct/>
         </div>
         <div className="checkout_right">
-
+            <Subtotal/>
         </div>
     </div>
   )
