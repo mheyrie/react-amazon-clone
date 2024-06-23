@@ -1,8 +1,28 @@
 import React from "react";
 import productsData from "../data/products.json";
 import "../styles/Product.css";
+import {useStateValue} from '../StateProvider/StateProvider';
 
 function ProductCard() {
+
+  // Add to basket onClick function 
+  const [state, dispatch] = useStateValue()
+
+  const addToBasket = (id, image, rating, price, title) => {
+    dispatch({
+      type: "ADD_TO_BASKET",
+      item: {
+        id: id,
+        image: image,
+        price: price,
+        rating: rating,
+        title: title,
+      },
+    });
+  }
+
+
+
   return (
     <div className="products">
       {productsData.products.map(({ id, title, price, rating, image }) => (
@@ -26,7 +46,7 @@ function ProductCard() {
           </div>
 
           <div className="add_to_basket_btn_container">
-            <button className="add_to_basket_btn">Add to Basket</button>
+            <button onClick={addToBasket} className="add_to_basket_btn">Add to Basket</button>
           </div>
         </div>
       ))}

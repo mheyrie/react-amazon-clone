@@ -8,7 +8,7 @@ function Checkout() {
   return (
     <div className="checkout">
         <div className="checkout_left">
-            <img src={ad} alt="checkout ad image" className="checkout_ad" />
+            <img src={ad} alt="checkout ad" className="checkout_ad" />
             <h2 className="checkout_title">
                 Your Shopping Basket
             </h2>

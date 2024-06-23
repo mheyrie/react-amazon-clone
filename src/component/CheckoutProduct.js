@@ -11,7 +11,7 @@ function CheckoutProduct() {
       />
       <div className="checkout_product_info">
         <p className="checkout_product_title">
-          Cinch Bottom Sweatpants for Women with Pockets Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non veritatis porro eum eligendi asperiores accusamus illo, maiores repellat explicabo eius laboriosam laudantium quo illum expedita magni quos, natus temporibus! Id?
+          Cinch Bottom Sweatpants for Women with Pockets 
         </p>
         <p className="checkout_product_price">
           <small>$</small>
