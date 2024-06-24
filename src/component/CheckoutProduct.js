@@ -1,24 +1,28 @@
 import React from "react";
 import "../styles/CheckoutProduct.css";
 
-function CheckoutProduct() {
+function CheckoutProduct({id, image, rating, price, title}) {
   return (
     <div className="checkout_products">
       <img
-        src="https://m.media-amazon.com/images/I/712kQyb3ECL._AC_SY741_.jpg"
+        src={image}
         alt=""
         className="checkout_product_img"
       />
       <div className="checkout_product_info">
         <p className="checkout_product_title">
-          Cinch Bottom Sweatpants for Women with Pockets 
+          {title}
         </p>
         <p className="checkout_product_price">
           <small>$</small>
-          <strong>11.35</strong>
+          <strong>{price}</strong>
         </p>
         <div className="checkout_product_rating">
-            ⭐⭐⭐
+          {Array(Number(rating))
+                .fill()
+                .map((_, i) => (
+                  <p key={i}>⭐</p>
+                ))}
         </div>
         <button className="checkout_product_btn">
             Remove from Basket
