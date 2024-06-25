@@ -1,18 +1,21 @@
+// here we define all the application level states and define actions to make the changes to the state
+
 export const initialState = {
     basket: [],
-  };
-  
-  const reducer = (state, action) => {
-    switch (action.type) {
-      case "ADD_TO_BASKET":
+};
+
+//Selector
+const reducer = (state, action) => {
+    switch(action.type) {
+        case "ADD_TO_BASKET":
         return {
-          ...state,
-          basket: [...state.basket, action.item],
-        };
-      default:
-        return state;
+            ...state,
+            basket: [...state.basket, action.item],
+        }
+        default:
+            return state
     }
-  };
-  
-  export default reducer;
-  
+}
+
+
+export default reducer;
