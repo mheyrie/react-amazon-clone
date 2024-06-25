@@ -34,7 +34,7 @@ function ProductCard() {
               <strong>{Number(price).toFixed(2)}</strong>
             </p>
             <div className="product_rating">
-              {Array(Number(rating))
+              {Array(rating)
                 .fill()
                 .map((_, i) => (
                   <p key={i}>⭐</p>
