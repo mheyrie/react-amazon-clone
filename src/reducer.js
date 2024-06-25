@@ -6,6 +6,7 @@ export const initialState = {
 
 //Selector
 const reducer = (state, action) => {
+    console.log("Reducer action:", action);
     switch(action.type) {
         case "ADD_TO_BASKET":
           return {

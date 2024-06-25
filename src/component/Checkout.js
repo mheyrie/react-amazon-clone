@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import '../styles/Checkout.css'
 import ad from '../image/ad.webp'
 import CheckoutProduct from "./CheckoutProduct"
@@ -6,7 +6,21 @@ import Subtotal from "./Subtotal"
 import { useStateValue } from '../StateProvider';
 
 function Checkout() {
-  const [{ basket }] = useStateValue();
+  const [{ basket }, dispatch] = useStateValue();
+
+  // useEffect(() => {
+  //   // Temporarily add items to basket for testing
+  //   dispatch({
+  //     type: "ADD_TO_BASKET",
+  //     item: {
+  //       id: "1",
+  //       title: "Test Product",
+  //       image: "https://via.placeholder.com/150",
+  //       price: 9.99,
+  //       rating: 5,
+  //     }
+  //   });
+  // }, [dispatch]);
 
   console.log('Basket Contents:', basket);
 

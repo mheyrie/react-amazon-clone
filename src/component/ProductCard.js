@@ -46,7 +46,7 @@ function ProductCard() {
           </div>
 
           <div className="add_to_basket_btn_container">
-            <button onClick={addToBasket} className="add_to_basket_btn">Add to Basket</button>
+            <button onClick={() => addToBasket(id, image, rating, price, title)} className="add_to_basket_btn">Add to Basket</button>
           </div>
         </div>
       ))}

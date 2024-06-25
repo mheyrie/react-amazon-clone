@@ -15,7 +15,7 @@ function CheckoutProduct({ id, image, rating, price, title }) {
   console.log("CheckoutProduct details:", { id, image, rating, price, title });
 
   return (
-    <div className="checkout_products" key={id}>
+    <div className="checkout_products" >
       <img
         src={image}
         alt={title}
