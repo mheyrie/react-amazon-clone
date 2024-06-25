@@ -3,11 +3,11 @@ import '../styles/Checkout.css'
 import ad from '../image/ad.webp'
 import CheckoutProduct from "./CheckoutProduct"
 import Subtotal from "./Subtotal"
-import { useStateValue } from '../StateProvider/StateProvider';
+import { useStateValue } from '../StateProvider';
 
 function Checkout() {
-  const [{ basket }, dispatch] = useStateValue();
-  
+  const [{ basket }] = useStateValue();
+
   console.log('Basket Contents:', basket);
 
   return (
@@ -27,10 +27,8 @@ function Checkout() {
               price={item.price}
               rating={item.rating}
               
-            />
-            
+            />  
           ))
-          
         )}
         </div>
         <div className="checkout_right">

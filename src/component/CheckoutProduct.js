@@ -1,6 +1,7 @@
 import React from "react";
 import "../styles/CheckoutProduct.css";
 
+
 function CheckoutProduct({ id, image, rating, price, title }) {
   console.log("CheckoutProduct details:", { id, image, rating, price, title });
   return (

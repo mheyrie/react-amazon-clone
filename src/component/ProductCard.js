@@ -1,7 +1,7 @@
 import React from "react";
 import productsData from "../data/products.json";
 import "../styles/Product.css";
-import {useStateValue} from '../StateProvider/StateProvider';
+import {useStateValue} from '../StateProvider';
 
 function ProductCard() {
 

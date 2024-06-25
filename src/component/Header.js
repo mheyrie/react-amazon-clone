@@ -4,7 +4,7 @@ import LocalGroceryStoreIcon from "@mui/icons-material/LocalGroceryStore";
 import StorefrontIcon from "@mui/icons-material/Storefront";
 import SearchIcon from "@mui/icons-material/Search";
 import { Link } from "react-router-dom";
-import { useStateValue } from "../StateProvider/StateProvider";
+import { useStateValue } from "../StateProvider";
 
 function Header() {
 
