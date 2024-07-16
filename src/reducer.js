@@ -7,8 +7,15 @@ export const initialState = {
 //Selector
 
 export const getBasketTotal = (basket) => {
-    return(basket?.reduce((amount, item) => item.price + amount, 0));
-}
+    console.log("Basket contents:", basket);
+
+    // Check if the basket is an array and contains items with price
+    return basket?.reduce((amount, item) => {
+        console.log(`Adding item price: ${item.price} to amount: ${amount}`);
+        return item.price + amount;
+    }, 0);
+};
+
 
 const reducer = (state, action) => {
     console.log("Reducer action:", action);
