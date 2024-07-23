@@ -26,10 +26,13 @@ function Header() {
       </div>
       {/* Navigation setup */}
       <div className="header_nav">
+        <Link to='/login' style={{textDecoration:'none'}} >
         <div className="nav_item">
           <span className="nav_itemFirst">Hello, Welcome</span>
           <span className="nav_itemSecond">Sign-In</span>
         </div>
+        </Link>
+        
         <div className="nav_item">
           <span className="nav_itemFirst">Your</span>
           <span className="nav_itemSecond">Shop</span>

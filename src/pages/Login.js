@@ -12,7 +12,7 @@ function Login() {
         <Link to='/' style={{textDecoration: "none"}} > 
         <div className="login_logo">
             <StorefrontIcon className="login_image" fontSize="large" />
-            <h2 className="login-logoTitle">eSHOP</h2>
+            <h2 className="login-title">eSHOP</h2>
         </div>
         </Link>
         <div className="login_container">
