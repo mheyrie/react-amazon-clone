@@ -32,3 +32,40 @@
     font-weight: 500;
     margin-bottom: 20px;
 }
+
+.login_container >form >h5{
+    margin-bottom: 5px;
+}
+.login_container >form >input{
+    margin-bottom: 10px;
+    height: 30px;
+    width: 100%;
+}
+
+.login_container > p{
+    margin-top: 15px;
+    font-size: 12px;
+}
+
+.login_signin_button{
+    background-color: #fff;
+    cursor: pointer;
+    border-radius: 2px;
+    width: 100%;
+    height: 30px;
+    border: 1px solid;
+    margin-top: 10px;
+    border-color: #a3a3a3 #9c7e31 #f39fde;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login_reg_button{
+    border-radius: 2px;
+    width: 100%;
+    height: 30px;
+    border: 1px solid;
+    margin-top: 10p;
+    border-color: yellowgreen;
+}

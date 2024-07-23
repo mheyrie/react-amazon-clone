@@ -16,7 +16,7 @@ function Login() {
         </div>
         </Link>
         <div className="login_container">
-            <h1>sign-in</h1>
+            <h1>Sign-in</h1>
             <form action="">
                 <h5>Email</h5>
                 <input type="text" value={email} onChange={e => setEmail(e.target.value)} />
@@ -31,7 +31,7 @@ function Login() {
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestias laboriosam reprehenderit beatae vitae quas pariatur recusandae voluptates fugit itaque autem, odio voluptatibus iure in quibusdam asperiores repellat tempore necessitatibus aliquid?
             </p>
 
-            <button className="login_reg_button">Create you eSHOP</button>
+            <button className="login_reg_button">Create your eSHOP</button>
         </div>
     </div>
   )
