@@ -2,10 +2,35 @@ import React, { useState } from 'react'
 import { Link, useHistory } from "react-router-dom"
 import StorefrontIcon from "@mui/icons-material/Storefront";
 import '../styles/Login.css'
+import { auth } from "./firebase";
 
 function Login() {
+    const history = useHistory()
     const [email, setEmail] = useState('')
     const [password, setPassword] = useState('')
+
+    const signIn = e => {
+        e.preventDefault()
+
+        auth
+            .signInWithEmailAndPassword(email, password)
+            .then(auth => {
+                history.push('/')
+            })
+            .catch(error => alert(error.message))
+    }
+    const register = e => {
+        e.preventDefault()
+
+        auth
+            .createUserWithEmailAndPassword(email, password)
+            .then((auth) => {
+                if(auth){
+                  history.push('/')  
+                }
+            })
+            .catch(error => alert(error.message))
+    }
 
   return (
     <div className="login">
@@ -24,14 +49,14 @@ function Login() {
                 <h5>Password</h5>
                 <input type="password" value={password} onChange={e=>setPassword(e.target.value)}/>
 
-                <button className="login_signin_button" type="submit">Sign In</button>
+                <button className="login_signin_button" type="submit" onClick={signIn} >Sign In</button>
             </form>
 
             <p>
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestias laboriosam reprehenderit beatae vitae quas pariatur recusandae voluptates fugit itaque autem, odio voluptatibus iure in quibusdam asperiores repellat tempore necessitatibus aliquid?
             </p>
 
-            <button className="login_reg_button">Create your eSHOP</button>
+            <button className="login_reg_button" onClick={register} >Create your eSHOP</button>
         </div>
     </div>
   )
