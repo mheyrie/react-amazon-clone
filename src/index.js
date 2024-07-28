@@ -4,6 +4,7 @@ import { BrowserRouter as Router } from "react-router-dom";
 import App from "./App";
 import reducer, { initialState } from "./reducer";
 import { StateProvider } from "./StateProvider";
+import "./App.css"
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(

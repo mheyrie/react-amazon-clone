@@ -22,6 +22,7 @@
 .product .title{
   margin-bottom: 0;
   font-weight: 100;
+  padding-bottom: 10px;
 }
 
 .product .product_rating{
@@ -30,6 +31,7 @@
 
 .product .product_price{
   margin-bottom: 0;
+  padding-bottom: 10px;
 }
 
 .product_info {
