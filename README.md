@@ -72,3 +72,5 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 
 ## Deployed website
 https://clone-eshop.firebaseapp.com/
+npm run build
+firebase deploy
